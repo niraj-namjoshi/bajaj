@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BCE0151</title> <!-- Replace with your roll number -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Processor</h1>
+        <textarea id="json-input" placeholder='Enter JSON here '></textarea>
+        <button id="submit-btn">Submit</button>
+        <p id="error-message"></p>
+
+        <div id="dropdown-container" style="display:none;">
+            <label for="response-options">Select Data to Display:</label>
+            <select id="response-options" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+
+        <div id="response-container">
+            <h2>Response:</h2>
+            <pre id="response-output"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
